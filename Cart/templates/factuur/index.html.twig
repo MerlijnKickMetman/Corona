@@ -3,6 +3,17 @@
 {% block title %}Factuur index{% endblock %}
 
 {% block body %}
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Navigation
+  </button>
+  <div class="dropdown-menu" aria-labelledby="Navigation">
+    <a class="dropdown-item" href="{{ path('klant_index')}}">Klant</a>
+    <a class="dropdown-item" href="{{ path('factuur_index')}}">Factuur</a>
+    <a class="dropdown-item" href="{{ path('product_index')}}">Product</a>
+    <a class="dropdown-item" href="{{ path('factuur_regel_index')}}">Factuurregel</a>
+  </div>
+</div>
     <h1>Factuur index</h1>
 
     <table class="table">
